@@ -2,6 +2,7 @@ package scope;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Scope;
 
@@ -23,6 +24,8 @@ public class PrototypeTest {
 
         ac.close();
     }
+
+
 
     @Scope("prototype")
     static class PrototypeBean{
